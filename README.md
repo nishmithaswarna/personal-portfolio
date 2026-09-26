@@ -4,7 +4,7 @@ A responsive and professional personal portfolio website developed for **Swarna 
 
 ## 🌐 Live Website
 
-[View Live Portfolio](YOUR_NETLIFY_URL)
+[View Live Portfolio](https://nishu7.netlify.app/)
 
 ## 👩‍💻 About
 
