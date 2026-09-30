@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uttaravalli Uma | Resume</title>
+  <style>
+    :root {
+      --white: #ffffff;
+      --bg: #f8fafc;
+      --paper: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+      --border: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", Arial, sans-serif;
+      line-height: 1.7;
+    }
+    .resume-shell {
+      max-width: 1100px;
+      margin: 32px auto;
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      overflow: hidden;
+    }
+    .resume-header {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 38px 40px 28px;
+    }
+    .resume-header h1 {
+      margin: 0 0 6px;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      letter-spacing: -0.06em;
+    }
+    .resume-header .role {
+      margin: 0 0 18px;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+    .resume-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.72rem 1.1rem;
+      border-radius: 10px;
+      border: 1px solid var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover { background: #1d4ed8; }
+    .btn-outline {
+      background: #fff;
+      color: var(--accent);
+    }
+    .btn-outline:hover { background: var(--accent-soft); }
+    .resume-body {
+      display: grid;
+      grid-template-columns: 1.1fr 1.8fr;
+      gap: 0;
+    }
+    .sidebar,
+    .main {
+      padding: 30px 32px;
+    }
+    .sidebar {
+      background: #f8fafc;
+      border-right: 1px solid var(--border);
+    }
+    .section {
+      margin-bottom: 28px;
+    }
+    .section h2 {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 1.02rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .meta-list, .bullet-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .meta-list li, .bullet-list li {
+      margin-bottom: 10px;
+      color: var(--muted);
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 18px;
+    }
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .main h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      color: var(--text);
+    }
+    .subhead {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .summary {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+    .timeline-item {
+      margin-bottom: 22px;
+    }
+    .timeline-item .head {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .timeline-item strong {
+      color: var(--text);
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .tags span {
+      background: var(--accent-soft);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    @media (max-width: 840px) {
+      .resume-body { grid-template-columns: 1fr; }
+      .sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+      .resume-shell { margin: 18px; }
+      .resume-header, .sidebar, .main { padding: 22px 20px; }
+    }
+    @media print {
+      body { background: #fff; }
+      .resume-shell { max-width: none; margin: 0; border: none; box-shadow: none; }
+      .resume-actions { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-shell">
+    <header class="resume-header">
+      <div class="role">B.Tech Student</div>
+      <h1>Uttaravalli Uma</h1>
+      <div class="resume-actions">
+        <a href="index.html" class="btn btn-outline">Back to Portfolio</a>
+        <a href="javascript:window.print()" class="btn btn-primary">Print Resume</a>
+      </div>
+    </header>
+
+    <div class="resume-body">
+      <aside class="sidebar">
+        <div class="section">
+          <h2>Contact</h2>
+          <ul class="meta-list">
+            <li>Phone: <a href="tel:+919346651773">9346651773</a></li>
+            <li>Email: <a href="mailto:umauttaravalli841@gmail.com">umauttaravalli841@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/uma-uttaravalli-a656ab38a" target="_blank" rel="noopener noreferrer">Uma Uttaravalli</a></li>
+            <li>GitHub: <a href="https://github.com/Uma0127" target="_blank" rel="noopener noreferrer">Uma0127</a></li>
+            <li>Location: Parvathi Puram Manyam District, Andhra Pradesh</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Skills</h2>
+          <ul class="bullet-list">
+            <li>Python</li>
+            <li>C</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>MySQL</li>
+            <li>Leadership</li>
+            <li>Problem Solving</li>
+            <li>Teamwork</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Certifications</h2>
+          <ul class="bullet-list">
+            <li>NPTEL – Internet of Things</li>
+            <li>Coursera – Communication Networks</li>
+            <li>5 Days Workshop on Generative AI</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="section">
+          <h2>Career Objective</h2>
+          <p class="summary">"To start my career in a growth-oriented organization where I can apply my technical skills, learn new technologies, and contribute to the success of the organization while building a strong career."</p>
+        </div>
+
+        <div class="section">
+          <h2>Education</h2>
+          <div class="timeline-item">
+            <div class="head"><strong>B.Tech</strong><span>2023 – 2027</span></div>
+            <div class="subhead">Bapatla Women&rsquo;s Engineering College</div>
+            <div>Score: 8.1</div>
+          </div>
+          <div class="timeline-item">
+            <div class="head"><strong>Intermediate</strong><span>2021 – 2023</span></div>
+            <div class="subhead">Government Junior College</div>
+            <div>Score: 8.5</div>
+          </div>
+          <div class="timeline-item">
+            <div class="head"><strong>SSC</strong><span>2020 – 2021</span></div>
+            <div class="subhead">ZPH School</div>
+            <div>Score: 8.2</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Internships</h2>
+          <div class="timeline-item">
+            <div class="head"><strong>Internshala Trainings</strong><span>9 May 2025 – 20 June 2025</span></div>
+            <div class="subhead">Area: Generative AI</div>
+            <p>Learned Generative AI concepts and their practical applications.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="head"><strong>Glow Logics</strong><span>Ongoing</span></div>
+            <div class="subhead">Area: Web Development</div>
+            <p>Web Development internship focused on learning and developing websites using HTML, CSS, and basic web technologies.</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Project</h2>
+          <div class="timeline-item">
+            <div class="head"><strong>Mini Novel Recommendation System</strong><span>Python</span></div>
+            <p>Developed a Python-based Mini Novel Recommendation System that suggests novels based on users' interests and preferences.</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Achievements</h2>
+          <ul class="bullet-list">
+            <li>NCC B Certificate — Rank: Junior Under Officer in NCC</li>
+            <li>AP Trekking Camp 3 – Guntur</li>
+            <li>Adventure Mountaineering Camp – Manali</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
